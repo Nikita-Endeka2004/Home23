@@ -29,11 +29,17 @@ function randMath() {
 
             indexInput.innerHTML = (`${number} ПОБЕДА`);
 
+            numberInput.disabled = true;
+            buttonInput.disabled = true;
+
           }
 
           if(guesses == 0){
 
             outOutput.innerHTML = (` Ответ ${randNumber} ВЫ ПРОИГРАЛИ :(`);
+
+            numberInput.disabled = true;
+            buttonInput.disabled = true;
 
           }
 
